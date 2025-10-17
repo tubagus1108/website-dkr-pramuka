@@ -84,10 +84,10 @@
                 <!-- Brand Section -->
                 <div class="lg:col-span-1">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="bg-gradient-to-br from-yellow-400 to-orange-500 p-3 rounded-xl shadow-lg">
-                            <svg class="w-10 h-10 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
-                            </svg>
+                        <div class="bg-white p-3 rounded-xl shadow-lg">
+                            <img src="{{ asset('images/Logo-Pramuka.jpeg') }}"
+                                alt="Logo Pramuka"
+                                class="w-10 h-10 object-contain">
                         </div>
                         <div>
                             <h3 class="text-2xl font-black text-white">DKR Pramuka</h3>
