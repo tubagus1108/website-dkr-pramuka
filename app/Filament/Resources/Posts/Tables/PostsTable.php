@@ -21,10 +21,10 @@ class PostsTable
     {
         return $table
             ->columns([
-                ImageColumn::make('featured_image')
+               ImageColumn::make('featured_image')
                     ->label('Gambar')
-                    ->circular()
-                    ->defaultImageUrl(url('/images/placeholder.png')),
+                    ->disk('public')
+                    ->visibility('public'),
 
                 TextColumn::make('title')
                     ->label('Judul')

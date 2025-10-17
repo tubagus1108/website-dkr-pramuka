@@ -20,7 +20,9 @@ class GalleriesTable
             ->columns([
                 ImageColumn::make('image')
                     ->label('Foto')
-                    ->size(80),
+                    ->size(80)
+                    ->disk('public')
+                    ->visibility('public'),
 
                 TextColumn::make('title')
                     ->label('Judul')

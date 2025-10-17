@@ -20,7 +20,9 @@ class EventsTable
             ->columns([
                 ImageColumn::make('image')
                     ->label('Banner')
-                    ->circular(),
+                    ->circular()
+                    ->disk('public')
+                    ->visibility('public'),
 
                 TextColumn::make('title')
                     ->label('Nama Event')

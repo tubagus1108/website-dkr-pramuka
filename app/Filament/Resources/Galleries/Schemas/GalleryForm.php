@@ -17,8 +17,10 @@ class GalleryForm
                 FileUpload::make('image')
                         ->label('Upload Foto')
                         ->image()
+                        ->disk('public')  // Tambahkan ini
                         ->required()
                         ->directory('gallery')
+                        ->visibility('public')  // Tambahkan ini
                         ->maxSize(3072)
                         ->imageEditor()
                         ->imageEditorAspectRatios([

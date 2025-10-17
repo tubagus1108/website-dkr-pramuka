@@ -82,7 +82,9 @@ class PostForm
                         FileUpload::make('featured_image')
                             ->label('Gambar Utama')
                             ->image()
+                            ->disk('public')  // Tambahkan ini
                             ->directory('posts')
+                            ->visibility('public')  // Tambahkan ini
                             ->maxSize(2048)
                             ->imageEditor()
                             ->imageEditorAspectRatios([

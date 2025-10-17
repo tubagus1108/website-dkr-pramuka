@@ -69,7 +69,9 @@ class EventForm
                 FileUpload::make('image')
                     ->label('Banner Event')
                     ->image()
+                    ->disk('public')  // Tambahkan ini
                     ->directory('events')
+                    ->visibility('public')  // Tambahkan ini
                     ->maxSize(2048)
                     ->imageEditor()
                     ->columnSpanFull(),
